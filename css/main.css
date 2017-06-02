@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+header {
+  height: 115px;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+header img {
+  background-color: #F5005B;
+  padding: 10px;
+  float: left;
+  height: 120px;
+  width: 110px;
+}
+
+header nav {
+  float: right;
+  width: calc(100% - 110px);
+}
+.home, .calendar, .join {
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+
+.home {
+  background: #00A5BF;
+}
+
+.calendar {
+  background: #00B7D3;
+}
+
+.join {
+  background: #00D5E7;
+}
+
+main {
+  color: #0B1942;
+}
+
+section {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h1, main h2{
+  font-weight: normal;
+}
+
+main h1 {
+  font-size: 2em;
+  margin-bottom: 0
+}
+
+main h2 {
+  color: #FFF;
+  background: #0B1942;
+  padding-left: 1vw;
+}
+
+.watch, .take-notes, .meetup {
+  line-height: 1.5;
+}
+
+.main-2 {
+  background: #0B1942;
+  padding-bottom: 2vh;
+}
+
+.up-next a {
+  color: #00B7D3;
+}
+
+
+.up-next h1 {
+  color: #FFF;
+  padding: 1vh 1vw;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.current-film, .upcoming-films {
+  background: #E2E2E2;
+}
+
+.current-film {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.current-film a {
+  font-size: 1.3rem;
+}
+
+.current-film img {
+  float: left;
+  width: 35vw;
+  height: 50vw;
+  margin: 15px;
+}
+
+.current-film-info {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.current-film-info ul {
+  padding-left: 1.5vw;
+  list-style: circle;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+.upcoming-films {
+  margin-top: 1vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .8rem;
+}
+
+.upcoming-films div {
+  width: calc(50% - 30px);
+  margin: 15px;
+}
+
+.current-month {
+  background: #0B1942;
+  color: #FFF;
+  max-width: 100%;
+}
+
+.meetup-calendar {
+  margin-left: 1vw;
+}
+
+.current-month h2 {
+  padding: 2vh;
+}
+
+.week {
+  display: flex;
+  height: 8vh;
+}
+
+.day {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  background: #FFF;
+  border: 1px solid #0B1942;
+}
+
+.current-month p {
+  margin: 0;
+  color: white;
+  background: #0B1942;
+  display: inline-block;
+  padding: 7px 10px;
+}
+
+.week:last-of-type .day:last-of-type {
+  margin-right: 57.14285%;
+}
+
+.month {
+  padding-bottom: 5vh;
+}
+
+.meeting-day {
+  background: #F5005B;
+}
+
+.profile-pic-img {
+  margin-top: 2vh;
+  margin-bottom: 2vh
+}
+
+.profile-pic-img img {
+  border-radius: 50%;
+}
+
+.account-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.account-info input {
+  width: 100vw;
+  border: 1px solid #ccc;
+  margin-bottom: 2vh;
+  height: 3vh;
+}
+
+.genres {
+  margin-top: 1vh;
+}
+
+.genres input {
+  margin: 2vh 1vw;
+}
+
+.genres ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additional-info {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.additional-info textarea {
+  width: 100%;
+  height: 6vh;
+  border: 1px solid black;
+}
+
+input[type=submit] {
+  background: #F5005B;
+  margin-bottom: 5vh;
+  border: none;
+  color: white;
+  padding: 2vh 2vw;
+  font-size: 1em;
+}
+
+footer p {
+  text-align: center;
+  padding: 2vh 2vw;
+  background: #7DDFE8;
+  margin: 0;
+  color: #FFF;
+}
+
+@media screen and (min-width: 545px) {
+
+nav {
+  display: flex;
+  height: 120px;
+}
+
+.home, .calendar, .join {
+  height: 120px;
+  flex: 1;
+  line-height: 120px;
+}
+
+nav > div {
+  flex: 3;
+  background: #7DDFE8;
+}
+
+nav > p {
+  flex: 3;
+  line-height: 90px;
+  text-align: right;
+}
+
+.get-involved {
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch, .take-notes, .meetup {
+  flex: 1;
+}
+
+.take-notes {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+hr {
+  width: 45vw
+}
+
+.current-film-info ul {
+  margin-left: 2vw;
+}
+
+.upcoming-films {
+  flex-wrap: nowrap;
+  font-size: 1em;
+}
+
+.upcoming-films img {
+  margin-bottom: 5px;
+}
+
+.week {
+  height: 13vh;
+}
+
+.join-form {
+  margin-top: 3vh;
+}
+
+.profile-pic {
+  width: 40%;
+  margin-right: 20px;
+  float: left;
+}
+
+.account-info {
+  padding-top: 3vh;
+}
+
+.account-info label:nth-child(7) {
+  margin-top: 8vh;
+}
+
+.genres {
+  margin-top: 5vh;
+}
+
+.genres li {
+  display: inline-block;
+  width: calc(50vw - 40px);
+}
+
+
+@media (min-width: 769px) {
+
+nav {
+  font-size: 1.3em;
+}
+
+nav div {
+  flex: 6;
+}
+
+nav p {
+  flex: 6;
+}
+
+
+
+
+.week {
+  height: 20vh;
+}
+
+.join-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.account-info {
+  width: 50%;
+}
+
+.account-info input {
+  width: 40vw;
+}
+
+.account-info label:nth-child(7) {
+  margin-top: 0;
+}
+
+.genres li {
+  width: 30vw;
+}
+
+}

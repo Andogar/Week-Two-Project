@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Join</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
   </head>
@@ -13,17 +14,64 @@
         <a href="../index.html" class="home">Home</a>
         <a href="../calendar/index.html" class="calendar">Calendar</a>
         <a href="./index.html" class="join">Join</a>
+        <div></div>
       </nav>
     </header>
-
+    <main>
+      <section>
+        <h1>Join Film Club</h1>
+        <form class="join-form" action="index.html" method="post">
+          <div class="profile-pic">
+            <label>profile picture</label> <br />
+            <input type="file" name="profile-info">
+            <div class="profile-pic-img">
+              <img src="../images/profile-placeholder.png" alt="Profile">
+            </div>
+          </div>
+          <div class="account-info">
+            <label>name</label>
+            <input type="text" name="profile-info">
+            <label>email address</label>
+            <input type="email" name="profile-info">
+            <label>password</label>
+            <input type="password" name="profile-info">
+            <label>confirm password</label>
+            <input type="password" name="profile-info">
+          </div>
+          <div class="genres">
+            <label>Which genres are you interested in?</label>
+            <div>
+              <ul>
+                <li><input type="checkbox" name="profile-info" value="action" id="action"> <label for="action">action</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="adventure" id="adventure"> <label for="adventure">adventure</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="comedy" id="comedy"> <label for="comedy">comedy</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="drama" id="drama"> <label for="drama">drama</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="fantasy" id="fantasy"> <label for="fantasy">fantasy</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="historical" id="historical"> <label for="historical">historical</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="horror" id="horror"> <label for="horror">horror</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="mystery" id="mystery"> <label for="mystery">mystery</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="romance" id="romance"> <label for="romance">romance</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="science fiction" id="science-fiction"> <label for="science-fiction">science fiction</label> <br></li>
+                <li><input type="checkbox" name="profile-info" value="western" id="western"> <label for="western">western</label> <br></li>
+              </ul>
+            </div>
+          </div>
+          <div class="additional-info">
+            <label>Additional Input</label> <br>
+            <textarea name="profile-info"></textarea>
+          </div>
+          <input type="submit" name="submit" value="Join Film Club">
+        </form>
+      </section>
+    </main>
 
     <footer>
       <nav>
         <a href="../index.html" class="home">Home</a>
         <a href="../calendar/index.html" class="calendar">Calendar</a>
         <a href="./index.html" class="join">Join</a>
+        <p>© 2017, Film Club</p>
       </nav>
-      <p>© 2017, Film Club</p>
     </footer>
   </body>
 </html>
