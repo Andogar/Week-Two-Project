@@ -359,8 +359,64 @@ nav p {
   flex: 6;
 }
 
+main h1 {
+  font-size: 2.5em;
+}
 
+main h2 {
+  font-size: 2em;
+}
 
+main p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.up-next {
+  display: inline-block;
+}
+
+.current-film img {
+  width: 50%;
+  height: 70%;
+}
+
+.current-film {
+  width: calc(50% - 40px);
+  float: left;
+  margin-left: 1em;
+}
+
+.current-film p {
+  margin-top: 0;
+}
+
+.current-film ul, .current-film p{
+  margin: 0;
+  margin-top: 20px;
+}
+
+.upcoming-films {
+  width: calc(50% - 40px);
+  margin: 0;
+  flex-wrap: wrap;
+  float: right;
+  line-height: 0.3;
+}
+
+.upcoming-films img {
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 18vw;
+  border: 1px solid #0B1942;
+  margin-bottom: 1em;
+}
+
+.main-2 section {
+  max-width: 98%;
+}
 
 .week {
   height: 20vh;
