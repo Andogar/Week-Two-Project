@@ -205,6 +205,10 @@ hr {
   border-radius: 50%;
 }
 
+.profile-pic {
+  max-width: 250px;
+}
+
 .account-info {
   display: flex;
   flex-wrap: wrap;
@@ -215,6 +219,12 @@ hr {
   border: 1px solid #ccc;
   margin-bottom: 2vh;
   height: 3vh;
+}
+
+.info-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .genres {
@@ -256,6 +266,10 @@ footer p {
   background: #7DDFE8;
   margin: 0;
   color: #FFF;
+}
+
+a, input[type="submit"], input[type="checkbox"], input[type="file"] {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 545px) {
@@ -336,7 +350,7 @@ hr {
 }
 
 .genres {
-  margin-top: 5vh;
+  margin-top: 5.5vh;
 }
 
 .genres li {
@@ -429,10 +443,28 @@ hr {
 
 .account-info {
   width: 50%;
+  height: 20vh;
+}
+
+.profile-pic {
+  width: 30%;
 }
 
 .account-info input {
-  width: 40vw;
+  width: 100%;
+}
+
+.account-info label {
+  width: 100%;
+}
+
+.account-info {
+  width: 67%;
+}
+
+.info-input {
+  width: calc(50% - 20px);
+  margin-left: 10px;
 }
 
 .account-info label:nth-child(7) {
@@ -442,5 +474,18 @@ hr {
 .genres li {
   width: 30vw;
 }
+
+.genres {
+  margin-top: 0;
+}
+
+.additional-info {
+  width: 100%;
+}
+
+.additional-info > textarea {
+  width: 60vw;
+}
+
 
 }
